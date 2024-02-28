@@ -11,6 +11,9 @@ func divideByZero(a, b float64)(res float64,err error){
 		}
 	}()
 
+	//line Added by Hitesh
+	fmt.Println("Recovered Successfully ")
+
 	if (b == 0){
 		panic("division by zero")
 	}
