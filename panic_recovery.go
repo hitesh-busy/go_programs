@@ -7,7 +7,7 @@ func divideByZero(a, b float64)(res float64,err error){
 		//Executing a call to recover inside a deferred function (but not any function called by it) stops the panicking sequence by restoring normal execution and retrieves the error value passed to the call of panic.
 		r := recover();
 		if r != nil {
-			err = fmt.Errorf("recovered from panic: %v", r)
+			err = errors.New("Recovered from pani ")
 		}
 	}()
 
